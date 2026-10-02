@@ -1,0 +1,15 @@
+# compiled binaries
+icg
+*.o
+*.exe
+a.out
+
+# program output (generated when you run it)
+output.txt
+# but keep the example output
+!examples/sample_output.txt
+
+# editor / OS files
+.vscode/
+.idea/
+.DS_Store

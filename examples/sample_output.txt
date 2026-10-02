@@ -1,0 +1,63 @@
+================================================
+push addr(A)(0x557a61d86350)
+push 10
+assign
+
+push addr(B)(0x557a61d86430)
+push 20
+assign
+
+push addr(C)(0x557a61d86490)
+push 30
+assign
+
+push addr(D)(0x557a61d864f0)
+push B(20)
+push C(30)
+push A(10)
+push B(20)
+iadd
+imult
+imult
+assign
+
+
+Symbol Table has 6 entries.
+
+Entry name: int
+Is Identifier: False
+Type: KEYWORD
+lvalue: NULL
+rvalue: NULL
+
+Entry name: float
+Is Identifier: False
+Type: KEYWORD
+lvalue: NULL
+rvalue: NULL
+
+Entry name: A
+Is Identifier: True
+Type: INT
+lvalue: 0x557a61d86350
+rvalue: 10
+
+Entry name: B
+Is Identifier: True
+Type: INT
+lvalue: 0x557a61d86430
+rvalue: 20
+
+Entry name: C
+Is Identifier: True
+Type: INT
+lvalue: 0x557a61d86490
+rvalue: 30
+
+Entry name: D
+Is Identifier: True
+Type: INT
+lvalue: 0x557a61d864f0
+rvalue: 18000
+
+================================================
